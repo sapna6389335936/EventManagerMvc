@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using EventManager.Models.Account;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace EventManager.Models
+namespace EventManager.Models.DB
 {
     public class AppDbContext : IdentityDbContext<AppUser>
     {
@@ -10,6 +11,7 @@ namespace EventManager.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.SeedRoles();
 
             modelBuilder.Entity<IdentityUserRole<Guid>>().HasKey(p => new { p.UserId, p.RoleId });
             modelBuilder.Entity<AppUser>().ToTable("ApplicationUser");

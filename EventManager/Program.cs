@@ -1,4 +1,5 @@
-using EventManager.Models;
+using EventManager.Models.Account;
+using EventManager.Models.DB;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
