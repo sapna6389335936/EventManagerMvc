@@ -24,4 +24,9 @@
     <PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Organizer\Data\" />
+    <Folder Include="Areas\Organizer\Models\" />
+  </ItemGroup>
+
 </Project>
