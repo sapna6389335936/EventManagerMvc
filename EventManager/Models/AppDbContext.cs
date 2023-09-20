@@ -23,6 +23,6 @@ namespace EventManager.Models
         }
 
 
-        DbSet<Guest> Guests { get; set; }
+        public DbSet<EventGuest> EventGuests { get; set; }
     }
 }

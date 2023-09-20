@@ -2,7 +2,7 @@
 
 namespace EventManager.Models
 {
-    public class Guest
+    public class EventGuest
     {
         [Key]
         public Guid Id { get; set; }
